@@ -20,8 +20,13 @@
 
 ## Тестирование сервиса
 
-Откройте Jupyter Notebook "Translate-Scale", расположенный по адресу [http://84.201.157.101:8888/notebooks](http://84.201.157.101:8888/notebooks)
-## Rename a file
+1. Откройте Jupyter Notebook "Translate-Scale", расположенный по адресу [http://84.201.157.101:8888/notebooks/my_project_env/Translate.ipynb](http://84.201.157.101:8888/notebooks/my_project_env/Translate.ipynb)
+2. Подставьте в 6-й строке сверху в поле заголовков HTTP ('Api-Key //ваш ключ//') ваш API-ключ.
+3. Обратите внимание на переменную mytext - в ней вы можете задать свой произвольный текст для перевода
+4. Обратите внимание на параметры, передаваемые в body - sourceLanguageCode и targetLanguageCode, можете поменять их на свое усмотрение. Описание возможных параметров доступно тут
+[https://cloud.yandex.com/docs/translate/api-ref/Translation/translate](https://cloud.yandex.com/docs/translate/api-ref/Translation/translate)
+3. Выполните ячейку - (для этого нажмите Shift+Enter 
+## Поздравляем, у вас все получилось!
 
 
 ```
