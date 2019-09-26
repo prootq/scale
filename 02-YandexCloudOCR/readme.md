@@ -10,23 +10,20 @@
  1.При помощи токена авторизации IAM,  при этом токен необходимо своевременно продлять (им и воспользуемся).
  2.При помощи ключа API 
 
-## Как получить доступ?
+## Как запустить демо?
 
  1. Откройте в браузере консоль Яндекс.Облака: https://console.cloud.yandex.ru/
  2. Перейдите в созданный для мероприятия каталог
- 3. Откройте на вкладке слева раздел "Сервисные аккаунты"
+ 3. Скопируйте из URL вида /folders/b1glv8a2h52e6dpg8ngb ID каталога (например b1glv8a2h52e6dpg8ngb)
+ 4. Откройте Jupyter Notebook "OCR", расположенный по адресу [http://84.201.157.101:8888/notebooks/my_project_env/OCR.ipynb#](http://84.201.157.101:8888/notebooks/my_project_env/OCR.ipynb#) и подставьте его в 33 строку второй ячейки, в значение переменной folder_id.
+ 5. Получите токен по ссылке [https://oauth.yandex.ru/authorize?response_type=token&client_id=1a6990aa636648e9b2ef855fa7bec2fb](https://oauth.yandex.ru/authorize?response_type=token&client_id=1a6990aa636648e9b2ef855fa7bec2fb) 
+ 6. Скопируйте его и подставьте в 34-ю строку 2-й ячейки в значение переменной oauth_token.
 
 
 
 
 ## Тестирование сервиса
-
-1. Откройте Jupyter Notebook "OCR", расположенный по адресу [http://84.201.157.101:8888/notebooks/my_project_env/OCR.ipynb#](http://84.201.157.101:8888/notebooks/my_project_env/OCR.ipynb#)
-2. Подставьте в 6-й строке сверху в поле заголовков HTTP ('Api-Key //ваш ключ//') ваш API-ключ.
-3. Обратите внимание на переменную mytext - в ней вы можете задать свой произвольный текст для перевода
-4. Обратите внимание на параметры, передаваемые в body - sourceLanguageCode и targetLanguageCode, можете поменять их на свое усмотрение. Описание возможных параметров доступно тут
-[https://cloud.yandex.com/docs/translate/api-ref/Translation/translate](https://cloud.yandex.com/docs/translate/api-ref/Translation/translate)
-3. Выполните ячейки - (для этого нажмите Shift+Enter) 
+1. Выполните ячейки - (для этого нажмите Shift+Enter) 
 ## Поздравляем, у вас все получилось!
 
 
